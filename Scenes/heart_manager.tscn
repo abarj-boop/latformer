@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://cisu5glsfmnvu"]
+
+[ext_resource type="Texture2D" uid="uid://1736xl3vx41l" path="res://My Assets/pixil-frame-0.png" id="1_8dv5q"]
+[ext_resource type="Script" uid="uid://22v3c4fuf61q" path="res://Scripts/heart_manager.gd" id="1_ssymw"]
+
+[node name="Heart Manager" type="Node2D" unique_id=1592929226]
+script = ExtResource("1_ssymw")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=817082206]
+position = Vector2(897, 51)
+texture = ExtResource("1_8dv5q")
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=173577150]
+position = Vector2(947, 50)
+texture = ExtResource("1_8dv5q")
+
+[node name="Sprite2D3" type="Sprite2D" parent="." unique_id=1579429571]
+position = Vector2(997, 50)
+texture = ExtResource("1_8dv5q")
+
+[node name="Sprite2D4" type="Sprite2D" parent="." unique_id=945728974]
+position = Vector2(1047, 50)
+texture = ExtResource("1_8dv5q")
+
+[node name="Sprite2D5" type="Sprite2D" parent="." unique_id=1050453710]
+position = Vector2(1097, 49)
+texture = ExtResource("1_8dv5q")
