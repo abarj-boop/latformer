@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://n7ublsilew5n"]
+
+[ext_resource type="AudioStream" uid="uid://dt1bunrghotck" path="res://My Assets/Outro.mp3" id="1_3vusp"]
+
+[node name="Control" type="Control" unique_id=32695275]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="." unique_id=394401520]
+layout_mode = 0
+offset_right = 1151.0
+offset_bottom = 652.0
+theme_override_font_sizes/font_size = 100
+text = "You Win"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1314260036]
+stream = ExtResource("1_3vusp")
+volume_db = -12.0
+autoplay = true

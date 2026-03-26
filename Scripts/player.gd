@@ -2,6 +2,7 @@ extends CharacterBody2D
 
 
 @onready var animated: AnimatedSprite2D = $AnimatedSprite2D
+@onready var ouchie: AnimationPlayer = $Ouchie
 
 const SPEED = 200.0
 const JUMP_VELOCITY = -350.0
@@ -51,6 +52,7 @@ func lose_life():
 		Engine.time_scale = 2
 		velocity.x = -100  
 		velocity.y = -50 
+		ouchie.play("Ouchie")
 		animated.play("Hit")
 		
 		await  animated.animation_finished
@@ -66,6 +68,7 @@ func respawn():
 func no_lives():
 	velocity.x = 0  
 	velocity.y = 0 
+	set_collision_mask_value(3, true)
 	animated.play("Death")
 	
 	await animated.animation_finished
